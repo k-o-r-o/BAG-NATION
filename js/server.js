@@ -25,7 +25,7 @@ const createUploadsDir = require('../uploads');
 createUploadsDir(); // Create the uploads directory if it doesn't already exist
 
 
-mongoose.connect('mongodb+srv://koro:Draker13@bag.fy4btjf.mongodb.net/myAppDatabase')
+mongoose.connect('mongodb+srv://@bag.fy4btjf.mongodb.net/myAppDatabase')
   .then(() => console.log('Connected to MongoDB...'))
   .catch(err => console.error('Could not connect to MongoDB...', err));
 
